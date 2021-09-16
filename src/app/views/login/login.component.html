@@ -1,0 +1,59 @@
+<div class="container ">
+  <h1 class="lo">LOGO <span>HERE</span></h1>
+  <div class="row Up">
+    <div class="col-lg-6">
+      <img  class ="do"src="assets\Capture.PNG" alt="" />
+    </div>
+    <div class="col-lg-6">
+      <div class="D">
+        <div class="jj">
+          <form
+          [formGroup] = "loginform"
+            class="form-signin phone"
+          > <h1 class="lo1">LOGO <span>HERE</span></h1>
+            <h1 class="h3 mb-3 fw-normal">Login</h1>
+            <p class="PP">
+              Doesn't have account yet?
+              <a class="Op" routerLink="/signup">Sign Up</a>
+            </p>
+            <div class="form-group otp">
+              <label for="inputPhoneNumber" class="Inn">Phone Number</label>
+              <input
+                formControlName="PhoneNumber"
+                type="text"
+                id="inputPhoneNumber"
+                class="form-control i"
+                name="Phone"
+                placeholder="Phone Number"
+                required
+                autofocus/>
+            </div>
+            <button class="w-100 btn btn-lg dd" (click)="login()" >Login</button>
+          </form>
+          <form
+          [formGroup] = "otpform"
+            class="form-signin otp phonenumber1"
+          >
+          <h1 class="lo1">LOGO <span>HERE</span></h1>
+            <h1 class="h3 mb-3 fw-normal">Login</h1>
+            <div class="form-group">
+              <p class="PP">
+              We have sent you an SMS on +91 {{this.loginform.value.PhoneNumber}} with  4 digit verification code (OTP).
+              </p>
+              <label for="inputcode" class="Inn">Otp Number</label>
+              <input
+                formControlName="code"
+                type="text"
+                id="inputcode"
+                class="form-control i"
+                placeholder="Otp Number"
+                required
+                autofocus/>
+            </div>
+            <button class="w-100 btn btn-lg dd" (click)="verify()" >Verify</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

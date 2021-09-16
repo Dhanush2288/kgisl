@@ -1,0 +1,437 @@
+.top-full {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: #e5e9f0;
+}
+.topnav{
+  width: 100%;
+  height: 9%;
+  background-color: white;
+}
+.divappointmenttab{
+  height: 91%;
+  width: 90%;
+  background-color: #e5e9f0;
+  border: 1px solid transparent;
+  margin: auto;
+}
+.row{
+padding: 0;
+margin: 0;
+}
+.logodiv{
+  background-color: #336EE0;
+}
+.doctorcal{
+  background-color: white;
+}
+.doctorprofile{
+  display: flex;
+
+}
+.appointmentdiv{
+  background-color: white;
+  padding: 0;
+}
+.selectpro{
+  width: 100%;
+  height: 75%;
+  margin: auto;
+  border-right: 3px solid #eff4ff;
+}
+mat-datepicker-toggle{
+color: #336EE0;
+}
+.profiledp{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+.calendar{
+  width: 100%;
+  height: 100%;
+}
+
+.doctorname{
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+}
+.menu{
+  margin: auto;
+}
+.clinicname{
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(151, 146, 146);
+  font-size: 12px;
+}
+
+.tdSpace{
+  padding:0px !important;
+
+  width: 50px;
+}
+.tdnumber{
+  width: 50px;
+}
+#Time-container1{
+  margin: auto;
+  padding: 0;
+  width: 84%;
+  height: 75%;
+  margin-left: 0;
+  border-right: 3px solid #eff4ff;
+}
+mat-datepicker{
+  display: none;
+}
+#date777{
+outline: none;
+border: none;
+color:#336EE0 ;
+margin-top: 6px;
+font-family: 'Poppins', sans-serif;
+}
+.rightdiv{
+  width: 70%;
+  float: right;
+  height: 100%;
+}
+.appointmentbtn{
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 140px;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgb(146 181 211 / 50%);
+  color: #336EE0;
+  font-weight: 500;
+}
+.b{
+  display: flex;
+  height: 82%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+.walkinbtn{
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 140px;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgb(146 181 211 / 50%);
+  margin-left: 20px;
+  color: #336EE0;
+  font-weight: 500;
+
+}
+.settings{
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: white;
+}
+.icosetting{
+  margin-left: 14px;
+
+  color: #336EE0;
+  font-size: 22px;
+}
+.icosort{
+  color: #336EE0;
+  font-size: 18px;
+}
+.homelink{
+  text-decoration: none;
+color: rgb(0, 0, 0);
+
+}
+.homeheading{
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+}
+.dateinput{
+  background-color: white;
+}
+.tabui li{
+      width: 140px;
+      background: #3569E7;
+      border-radius: 15px 15px 1px 1px;
+      display: flex;
+      margin-left: 10px;
+      color: white;
+      cursor: pointer;
+}
+.tabui{
+  display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.logout{
+  border: none;
+  background-color: transparent;
+}
+.logoh4{
+  margin: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.d{
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+}
+.activetab{
+  background: white !important;
+  color: #004cff !important;
+}
+
+.line{
+  width: 3px;
+  height: 65%;
+  background: #004cff;
+  display: block;
+  margin: 16px 0;
+  border-radius: 20px 20px;
+}
+.clear{
+  margin-left: 20px;
+}
+.dragg{
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+}
+.numberr{
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+.waitingtd{
+  width: 115px;
+}
+.menutd{
+  width: 115px;
+}
+.watingti{
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: rgb(248, 70, 85);
+}
+.soru1{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  vertical-align: middle;
+  height: 24px;
+  color: #272727;
+  transform: rotate(
+    90deg);
+    margin: 10px;
+        margin-left: 25px;
+}
+.vitalsti{
+  padding: 6px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+}
+.checkti{
+  padding: 6px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+}
+
+.waitingdiv{
+  width: 80%;
+  height: 90%;
+  margin: 5%;
+  margin-left: 0%;
+  background: #f7e4e6;
+  border-radius: 10px;
+}
+.notarriveddiv{
+  width: 80%;
+  height: 90%;
+  margin: 5%;
+  margin-left: 0%;
+  background: #e5f2fd;
+  border-radius: 10px;
+}
+.notarrivedti{
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: rgb(22, 105, 212);
+}
+.vitalstd{
+  width: 120px;
+}
+.vitalsdiv{
+  width: 100%;
+  height: 70%;
+  margin-left: 0%;
+  background: #fcfcfc;
+  border:none;
+  box-shadow: 0px 1px 2px 2px rgb(214 229 255);
+    border-radius: 40px;
+}
+.heartbeat{
+  font-size: 20px;
+  color: #7FE0D4;}
+  .checkind{
+    font-size: 20px;
+  color: #0d7ae0;
+  }
+.numberh4{
+  color: #ffc400;
+  font-size: 18px;
+  display: inline-block;
+  margin: 10px 15px 5px;}
+  .patientname p {
+margin: 0px;
+  }
+  .pname{
+    font-family: 'Poppins', sans-serif;
+font-size: 16px;
+font-weight: 500;
+
+  }
+  .ptime{
+    font-family: 'Poppins', sans-serif;
+font-size: 14px;
+color: slategray;
+margin: 0;
+  }
+.icondrag{
+  color: #222222;
+    font-size: 25px;
+    margin: auto;
+    position: relative;
+    top: 7px;
+    margin-left: 17px;
+}
+.tabletab{
+  width: 90%;
+  height: 70vh;
+  background-color: white;
+  margin-left: 10px;
+  overflow-y: auto;
+}
+.even{
+  background-color: rgb(190, 229, 255);
+  color: #3569E7;
+}
+.even .numberh4{
+  color: #3569E7;
+
+}
+.profile-btn{
+  background-color: transparent;
+  border: none;
+
+}
+.tdpic{
+  width: 80px;
+}
+.profiletabpic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.cvvc{
+  width: 100%;
+}
+.cvvc th{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.menu{
+  width: 20px;
+}
+@media screen and (max-width:768px){
+  .top-full{
+    overflow: auto;
+  }
+  .topnav{
+    padding: 0;
+    margin: 0;
+    height: 36%;
+    display: block;
+  }
+  .logodiv{
+    width: 100%;
+    padding: 10px;
+  }
+  .doctorcal{
+    width: 100%;
+    padding: 0;
+    display: block;
+    height: 44%;
+  }
+  .doctorprofile{
+    display: flex;
+    width: 96%;
+    margin: 10px;  }
+  .doctorca{
+    width: 97%;
+    margin: 10px;
+    padding:0;
+  }
+  #Time-container1{
+    box-shadow: 0px 1px 2px 2px rgb(214 229 255);
+    margin-left: 3%;
+  }
+  .appointmentdiv{
+    width: 100%;
+  }
+  .rightdiv{
+    width: 100%;
+    float: left;
+  }
+  .divappointmenttab{
+    width: 100%;
+
+  }
+  .tabletab{
+    width: 98%;
+    margin: 0;
+    overflow: auto;
+  }
+  .mat-column-space{
+    display: none;
+  }
+  .mat-column-Number{
+    display: none;
+  }
+  .tabui li{
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}

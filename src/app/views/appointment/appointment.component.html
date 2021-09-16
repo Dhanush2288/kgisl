@@ -1,0 +1,153 @@
+
+<div class="pagefull">
+  <div class="title">
+    <h4 class="Appointh4">Appointment</h4>
+    <a href="" class="homelinkk" [routerLink]="['/dashboard']">Home <span class="link">></span></a>
+    <a href="" class="Appointmentslink"> Appointments</a>
+  </div>
+  <div class="dcvdcv">
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+      <div fxFlex="20%">
+        <mat-card>
+          <mat-calendar [selected]="selectedDate"  (selectedChange)="onSelect($event)"></mat-calendar>
+        </mat-card>
+      </div>
+      <div class="rgtgt">
+      </div>
+    </div>
+  </div>
+  <div class="rightee">
+<div class="morningdiv">
+<div class="iconmorning">
+  <fa-icon [icon]="['fas', 'cloud-sun']" class="icosetting"></fa-icon>
+
+</div>
+<div class="morningtext">
+  <h4>Morning</h4>
+  <p class="timingtext">
+    00.00 AM to 12.00 PM
+  </p>
+</div>
+<div class="morningaddbtn">
+  <button class="addslots" (click)="openModal(template)">
+    <fa-icon [icon]="['fas', 'plus']" class="icoplus"></fa-icon> Add Slots
+  </button>
+</div>
+</div>
+    <div class="cont">
+      <div class="constf" *ngFor="let r of today"  [class.main]="this.r.BookingFalg ">
+
+         <p class="westart">{{this.r.StartTime | date: "h:mm a"}}</p>
+
+        <button class="soru" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item  (click)="but(this.r._id,this.r.StartTime,this.r.EndTime)">
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+      <p class="nodatafound">{{datafoun}}</p>
+    </div>
+    <div class="morningdiv">
+      <div class="iconeve">
+        <fa-icon [icon]="['fas', 'cloud-moon']" class="icoeve"></fa-icon>
+
+      </div>
+      <div class="morningtext">
+        <h4>Evening</h4>
+        <p class="timingtext">
+          12.00 PM to 00.00 AM
+        </p>
+      </div>
+      <div class="morningaddbtn">
+        <button class="addslots" (click)="openModal(template)">
+          <fa-icon [icon]="['fas', 'plus']" class="icoplus"></fa-icon> Add Slots
+        </button>
+      </div>
+  </div>
+  <div class="cont">
+    <div class="constf" *ngFor="let r of eveningarr" [class.main]="this.r.BookingFalg ">
+
+       <p class="westart">{{this.r.StartTime | date: "h:mm a"}}</p>
+
+      <button class="soru" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item  (click)="but(this.r._id,this.r.StartTime,this.r.EndTime)">
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+    <p class="nodatafound">{{datafoun}}</p>
+  </div>
+</div>
+<!-- Modal -->
+<ng-template #template>
+
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Time Slot Allocation</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="Time">
+      <h5 class="TimeHeading Addslot">Add Time Slot</h5>
+     <form class="TimeForm" [formGroup]="addEventForm">
+       <div class="row">
+         <div class="col-lg-6">
+           <div class="form-group">
+             <label class="TimeHeading">Start Time</label>
+             <input
+               class="TimePicker"
+               id="timestart"
+               placeholder="Choose Time"
+               formControlName="StartTime"
+               class="titleinp form-control"
+               [ngClass]="{'is-invalid ' : addEventForm.get('StartTime').touched && addEventForm.get('StartTime').invalid }"
+               [ngxTimepicker]="picker"
+             />
+             <div class="invalid-feedback">
+              <div>Start Time Required</div>
+            </div>
+             <ngx-material-timepicker class="opopp"
+             [timepickerClass]="'custome-class'"
+#picker></ngx-material-timepicker>
+           </div>
+         </div>
+         <div class="col-lg-6">
+          <div class="form-group">
+            <label class="TimeHeading">End Time</label>
+            <input
+              class="TimePicker"
+              id="timestart"
+              placeholder="Choose Time"
+              formControlName="EndTime"
+              class="titleinp form-control"
+              [ngClass]="{'is-invalid ' : addEventForm.get('EndTime').touched && addEventForm.get('EndTime').invalid }"
+              [ngxTimepicker]="picker1"
+            />
+            <div class="invalid-feedback">
+              <div>End Time Required</div>
+            </div>
+            <ngx-material-timepicker #picker1 ></ngx-material-timepicker>
+          </div>
+         </div>
+
+       </div>
+       <button
+         type="submit"
+         class="btn btn-dark timeSubmit"
+         (click)="onSubmit()"
+       >
+         Submit
+       </button>
+     </form>
+   </div>
+  </div>
+  </ng-template >

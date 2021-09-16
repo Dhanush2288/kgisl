@@ -1,0 +1,119 @@
+.L{
+  width: 800px;
+  height:500px;
+}
+body{
+  background-color:white;
+}
+.Up{
+  padding-top: 100px;
+}
+.D{
+  width: 350px;
+  height: 400px;
+  position: relative;
+  left: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  bottom: 30px;
+}
+.fw-normal{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+
+}
+.card{
+  align-items: center;
+  justify-content: space-between;
+}
+.form-signin{
+  margin: 0;
+  padding: 50px 30px  ;
+}
+.Inn{
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.dd{
+  background-color: black;
+  color:white;
+}
+.form-group input{
+
+  color: rgb(51, 51, 54);
+  padding: 10px;
+}
+.form-group {
+  margin-bottom: 0;
+}
+ .otp{
+  padding-bottom: 0px;
+}
+.form-group label{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+   font-size: 100%;
+}
+.PP{
+  position: relative;
+  bottom: 10px;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+.form-signin button{
+  position: relative;
+  top: 20px;
+}
+.do{
+  position: relative;
+  bottom: 80px;
+}
+.lo{
+  position: relative;
+  top: 20px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+.lo1{
+  position: relative;
+  top: 20px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+form{
+  position: relative;
+  bottom: 0px;
+}
+
+.phonenumber1{
+  display: none;
+}
+.op{
+  border: orangered;
+}
+@media screen and (max-width: 995px) {
+  .do{
+    display: none
+  }
+  .D{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 290px;
+    height: 100%;
+  }
+  .Up{
+    padding-top: 25px;
+  }
+  .lo{
+    font-size: 25px;
+  }
+  .fw-normal{
+    font-size: 25px;
+  }
+}
